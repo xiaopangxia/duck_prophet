@@ -34,7 +34,7 @@
 
 
 #### 3.	web接口说明，三个主要接口，请求地址应为host:8888,下图中18888端口不用管
-    a)	news_search，请求方式如下，POST类型，返回Json格式新闻列表以及结果数目。<br>
+    a)news_search，请求方式如下，POST类型，返回Json格式新闻列表以及结果数目。<br>
       URL参数：target=news_search&page_num=分页号<br>
       POST请求参数：<br>
         Polarity: 极性选项，可选“all”、“1”、“-1”、“0”，表示全部、正面、负面、中性<br>
@@ -43,7 +43,7 @@
         date_range: 日期可用两种类型，“2018-01-20 2018-01-30”这种表示某段时间范围，也可传“day”，“week”，“month”，“year”，“all”表示最近一天一周等等。<br>
 ![接口1](https://github.com/xiaopangxia/duck_prophet/blob/master/images/pic_1.bmp)
 
-    b)	news_analyze，请求方式如下，POST类型，返回某篇文章的摘要句以及带权关键词列表，Json格式。<br>
+    b)news_analyze，请求方式如下，POST类型，返回某篇文章的摘要句以及带权关键词列表，Json格式。<br>
       Url参数：target=news_analyze<br>
       POST请求参数：<br>
         news_url: 新闻文章的地址，也是它的唯一标识，可以来自与前一个接口返回的数据结果，也可以是未收录的新闻地址。<br>
@@ -52,7 +52,7 @@
 
 ![接口2](https://github.com/xiaopangxia/duck_prophet/blob/master/images/pic_2.bmp)
 
-    c)	topic_trend，请求方式如下，POST类型，返回某段时间某个话题的分时文章数量，表示话题热度趋势，Json格式。
+    c)topic_trend，请求方式如下，POST类型，返回某段时间某个话题的分时文章数量，表示话题热度趋势，Json格式。
       Url参数：target=topic_trend<br>
       POST请求参数：<br>
       topic: 关注的话题文本<br>
